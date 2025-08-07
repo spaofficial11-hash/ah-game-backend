@@ -4,10 +4,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const morgan = require('morgan');
 const authRoutes = require('./backend/src/routes/authRoutes');
-const gameRoutes = require('./src/routes/gameRoutes');
-const walletRoutes = require('./src/routes/walletRoutes');
-const referralRoutes = require('./src/routes/referralRoutes');
-const connectDB = require('./src/config/db');
+const gameRoutes = require('./backend/src/routes/gameRoutes');
+const walletRoutes = require('./backend/src/routes/walletRoutes');
+const referralRoutes = require('./backend/src/routes/referralRoutes');
+const connectDB = require('./backend/src/config/db');
 
 dotenv.config();
 
