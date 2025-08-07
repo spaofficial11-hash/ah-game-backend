@@ -2,10 +2,10 @@
   "name": "ah-game-backend",
   "version": "1.0.0",
   "description": "Backend for AH GAME (Node.js + Express + MongoDB)",
-  "main": "server.js",
+  "main": "Server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node Server.js",
+    "dev": "nodemon Server.js"
   },
   "keywords": [
     "casino",
@@ -24,7 +24,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.9.1"
+    "nodemailer": "^6.9.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
