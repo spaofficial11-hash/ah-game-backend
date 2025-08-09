@@ -34,8 +34,13 @@ app.use('/api/referrals', referralRoutes);
 app.get('/', (req, res) => {
   res.send('AH GAME Backend API is running...');
 });
-// Add this after your other routes
+
+// Secure Ping route
 app.get("/ping", (req, res) => {
+  const secret = req.query.key; // Example: /ping?key=ah_game_2025
+  if (secret !== "ah_game_2025") {
+    return res.status(403).send("Forbidden");
+  }
   res.status(200).send("OK");
 });
 
