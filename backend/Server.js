@@ -36,12 +36,12 @@ app.get('/', (req, res) => {
 });
 
 // Secure Ping route
-app.get("/ping", (req, res) => {
+app.get('/ping', (req, res) => {
   const secret = req.query.key; // Example: /ping?key=ah_game_2025
-  if (secret !== "ah_game_2025") {
-    return res.status(403).send("Forbidden");
+  if (secret !== 'ah_game_2025') {
+    return res.status(403).send('Forbidden');
   }
-  res.status(200).send("OK");
+  res.status(200).send('OK');
 });
 
 // Port setup (Render ke liye mandatory)
