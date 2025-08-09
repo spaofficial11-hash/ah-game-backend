@@ -34,6 +34,10 @@ app.use('/api/referrals', referralRoutes);
 app.get('/', (req, res) => {
   res.send('AH GAME Backend API is running...');
 });
+// Add this after your other routes
+app.get("/ping", (req, res) => {
+  res.status(200).send("OK");
+});
 
 // Port setup (Render ke liye mandatory)
 const PORT = process.env.PORT || 5000;
